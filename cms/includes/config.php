@@ -29,9 +29,6 @@
 	$password = "";       	
 	$db_name = "smart_time";  
 
-	/*$user = "pluzmene_tony";
-	$password = "tonymissie123";
-	$db_name = "pluzmene_smart_time";*/
 	
 	$con = mysql_connect("$host","$username","$password");
 	$con_sqli = mysqli_connect("$host","$username","$password", "$db_name");
