@@ -1,0 +1,10 @@
+create view course_group_session as select  c.cid, c.ccode, c.cname, g.gid, g.group_type, g.gname,  GROUP_CONCAT( CAST(s.sid AS CHAR)
+SEPARATOR  ',' ) session_string from course c, subject_group g, subject_session s where c.cid = g.cid  and s.gid = g.gid group by gid
+
+create view group_session as select  g.gid, g.group_type, g.gname from course c, subject_group g, subject_session s where c.cid = g.cid group by gid
+
+
+create view group_session as SELECT gid, GROUP_CONCAT( CAST(sid AS CHAR)
+SEPARATOR  ',' ) session_string 
+FROM subject_session
+GROUP BY gid

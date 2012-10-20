@@ -1,0 +1,8 @@
+create view cgs as
+select c.cid, c.ccode, c.cname, c.c_short, s.gid, s.group_type, ss.sid, ss.wday, ss.start_time, ss.end_time, ss.venue, ss.s_desc
+from course c, subject_group s, subject_session ss
+where c.cid = s.cid
+and s.gid = ss.gid
+
+create view course_group_session as select  c.cid, c.ccode, c.cname, c.c_short, g.gid, g.group_type,  GROUP_CONCAT( CAST(s.sid AS CHAR)
+SEPARATOR  ',' ) session_string from course c, subject_group g, subject_session s where c.cid = g.cid  and s.gid = g.gid group by gid

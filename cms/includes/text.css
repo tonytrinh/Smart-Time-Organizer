@@ -1,0 +1,123 @@
+.main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4B4B4B;
+}
+.sml {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+}
+.tabletil {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	font-weight: bold;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.tabletex {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	font-weight: normal;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.tabletex_red {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: RED;
+	font-weight: normal;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.logout {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #4B4B4B;
+        text-decoration: none;
+}
+
+.logout:hover {
+        text-decoration: underline;
+}
+
+.sort_header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.sort_header:hover {
+        text-decoration: underline;
+}
+
+
+.mainwhite {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.mainwhite:hover {
+	text-decoration: underline;
+}
+
+.box {
+	background-color: #FFF;
+	width: 180px;
+	border: thin solid #CCC;
+	height: 16px;
+}
+.title {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 21px;
+	color: #525252;
+}
+
+div.pagination {
+	padding: 3px;
+	margin: 3px;
+}
+
+div.pagination a {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #AAAADD;
+	
+	text-decoration: none; /* no underline */
+	color: #000099;
+}
+div.pagination a:hover, div.pagination a:active {
+	border: 1px solid #000099;
+
+	color: #000;
+}
+div.pagination span.current {
+padding: 2px 5px 2px 5px;
+margin: 2px;
+	border: 1px solid #000099;
+	font-weight: bold;
+	background-color: #000099;
+	color: #FFF;
+}
+div.pagination span.disabled {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #EEE;
+
+	color: #DDD;
+}
+	
+input.file {
+	color:#000000;
+	z-index:1;
+	width:25px;
+	height:20px;
+	font-size:8px;
+}
